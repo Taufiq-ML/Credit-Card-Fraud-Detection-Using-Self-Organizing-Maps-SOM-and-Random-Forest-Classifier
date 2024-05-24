@@ -106,6 +106,24 @@ new_user_transaction = pd.DataFrame([{
 
 The combination of SOM for feature extraction and a Random Forest classifier achieves high accuracy in detecting fraudulent transactions. The results are summarized in the classification report and accuracy score output by the script.
 
+runfile('C:/Users/UseR/Desktop/Fraud/train_and_save_models.py', wdir='C:/Users/UseR/Desktop/Fraud')
+SOM training completed.
+Accuracy: 1.00
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     85307
+           1       0.79      0.36      0.49       136
+
+    accuracy                           1.00     85443
+   macro avg       0.89      0.68      0.75     85443
+weighted avg       1.00      1.00      1.00     85443
+
+Potential fraudulent transactions saved to 'potential_frauds.csv'.
+
+runfile('C:/Users/UseR/Desktop/Fraud/predict_new_transaction.py', wdir='C:/Users/UseR/Desktop/Fraud')
+The transaction is: Not Fraudulent
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request if you have suggestions for improvements or new features.
